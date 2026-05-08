@@ -115,6 +115,38 @@ class CountryTipsActivity : AppCompatActivity() {
                     TravelTip(4, "CULTURA", "Tecnologia e Inovação", "Explore Akihabara em Tóquio para eletrónica e anime. O Japão combina tradição com modernidade.", R.drawable.icon_cultura)
                 )
             }
+            9 -> { // Alemanha
+                listOf(
+                    TravelTip(1, "CULTURA", "Cerveja Alemã", "A Alemanha é famosa pela sua cerveja. Experimente as regionais em Munique, Colónia e Berlim.", R.drawable.icon_comida),
+                    TravelTip(2, "CULTURA", "Castelos e História", "Visite o castelo de Neuschwanstein, o Muro de Berlim e a história da Guerra Fria.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "Deutsche Bahn", "Os comboios alemães são eficientes. Use o BahnCard para descontos em viagens frequentes.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Natal na Alemanha", "Os mercados de Natal em Nuremberg, Dresden e Munique são os mais tradicionais da Europa.", R.drawable.icon_cultura)
+                )
+            }
+            10 -> { // Canadá
+                listOf(
+                    TravelTip(1, "CULTURA", "Natureza e Parques", "Visite Banff, Jasper e o Parque Nacional de Niagara. O Canadá tem paisagens espetaculares.", R.drawable.icon_cultura),
+                    TravelTip(2, "CULTURA", "Culinária Canadiana", "Experimente poutine, maple syrup e a comida multicultural das grandes cidades.", R.drawable.icon_comida),
+                    TravelTip(3, "TRANSPORTE", "Transporte Público", "Nas grandes cidades use o metro. Para longas distâncias, voe entre províncias.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Cidades Multiculturais", "Toronto, Vancouver e Montreal oferecem culturas diversas, arte e gastronomia internacional.", R.drawable.icon_cultura)
+                )
+            }
+            11 -> { // Austrália
+                listOf(
+                    TravelTip(1, "CULTURA", "Praias e Surfe", "Austrália tem das melhores praias do mundo. Bond Beach, Gold Coast e Bells Beach são imperdíveis.", R.drawable.icon_cultura),
+                    TravelTip(2, "CULTURA", "Vida Selvagem", "Veja coalas, cangurus e a Grande Barreira de Corais. Um dos países com mais biodiversidade.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "Explorar a Austrália", "Alugar carro é essencial. As distâncias são enormes. Voos internos são económicos.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Cultura Aborígene", "Aprenda sobre a cultura indígena australiana, a mais antiga do mundo com mais de 65.000 anos.", R.drawable.icon_cultura)
+                )
+            }
+            12 -> { // México
+                listOf(
+                    TravelTip(1, "CULTURA", "Gastronomia Mexicana", "A culinária mexicana é património UNESCO. Experimente tacos, mole, pozole e tequila.", R.drawable.icon_comida),
+                    TravelTip(2, "CULTURA", "Ruínas Maias e Astecas", "Visite Chichén Itzá, Teotihuacán e Machu Picchu (Peru). Civilizações impressionantes.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "Transporte no México", "Use ADO para autocarros entre cidades. Voos internos são seguros e acessíveis.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Festivais e Tradições", "O Dia dos Mortos em novembro é único. O Carnaval de Veracruz e a Semana Santa são famosos.", R.drawable.icon_cultura)
+                )
+            }
             else -> emptyList()
         }
     }

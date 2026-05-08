@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="100">
+
+    <!-- Fundo azul -->
+    <path
+        android:fillColor="#00008B"
+        android:pathData="M0,0 L200,0 L200,100 L0,100 Z" />
+    
+    <!-- União Jack (simplificado) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0 L80,0 L80,100 L0,100 Z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M0,0 L30,0 L30,100 L0,100 Z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M50,0 L80,0 L80,100 L50,100 Z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M0,35 L80,35 L80,65 L0,65 Z" />
+    
+    <!-- Estrela da Commonwealth -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,50 L125,65 L140,65 L128,75 L133,90 L120,80 L107,90 L112,75 L100,65 L115,65 Z" />
+    
+    <!-- Estrelas da constelação do Cruzeiro do Sul -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M150,30 L152,35 L157,35 L153,38 L155,43 L150,40 L145,43 L147,38 L143,35 L148,35 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M165,45 L167,50 L172,50 L168,53 L170,58 L165,55 L160,58 L162,53 L158,50 L163,50 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M155,60 L157,65 L162,65 L158,68 L160,73 L155,70 L150,73 L152,68 L148,65 L153,65 Z" />
+
+</vector>

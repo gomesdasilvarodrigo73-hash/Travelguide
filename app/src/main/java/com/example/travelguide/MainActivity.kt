@@ -128,6 +128,42 @@ class MainActivity : AppCompatActivity() {
                 capital = "Tóquio",
                 currency = "JPY",
                 language = "Japonês"
+            ),
+            Country(
+                id = 9,
+                name = "Alemanha",
+                flagRes = R.drawable.flag_alemanha,
+                continent = "Europa",
+                capital = "Berlim",
+                currency = "EUR",
+                language = "Alemão"
+            ),
+            Country(
+                id = 10,
+                name = "Canadá",
+                flagRes = R.drawable.flag_canada,
+                continent = "América do Norte",
+                capital = "Ottawa",
+                currency = "CAD",
+                language = "Inglês/Francês"
+            ),
+            Country(
+                id = 11,
+                name = "Austrália",
+                flagRes = R.drawable.flag_australia,
+                continent = "Oceania",
+                capital = "Canberra",
+                currency = "AUD",
+                language = "Inglês"
+            ),
+            Country(
+                id = 12,
+                name = "México",
+                flagRes = R.drawable.flag_mexico,
+                continent = "América do Norte",
+                capital = "Cidade do México",
+                currency = "MXN",
+                language = "Espanhol"
             )
         )
     }
