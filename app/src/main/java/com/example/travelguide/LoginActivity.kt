@@ -88,8 +88,11 @@ class LoginActivity : AppCompatActivity() {
             return false
         }
 
-        // Validar credenciais (simulação)
-        if (username == "admin" && password == "1234") {
+        // Validar credenciais contra utilizadores registrados
+        val storedPassword = getSharedPreferences("UserCredentials", MODE_PRIVATE)
+            .getString("password_$username", null)
+        
+        if (storedPassword != null && storedPassword == password) {
             showToast("Login realizado com sucesso!")
             return true
         } else {

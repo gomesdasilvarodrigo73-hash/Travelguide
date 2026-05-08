@@ -68,6 +68,46 @@ class CountryTipsActivity : AppCompatActivity() {
                     TravelTip(4, "CULTURA", "Regiões Vinícolas", "Visite Bordeaux, Champagne ou Bourgogne para degustações e tours pelas vinícolas.", R.drawable.icon_cultura)
                 )
             }
+            4 -> { // Brasil
+                listOf(
+                    TravelTip(1, "CULTURA", "Gastronomia Brasileira", "Experimente a feijoada, o acarajé e os churrascos sulistas. O Brasil tem culinária diversa e deliciosa.", R.drawable.icon_comida),
+                    TravelTip(2, "CULTURA", "Carnaval e Festas", "O Carnaval do Rio é o maior do mundo. Também experimente São João no Nordeste.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "Transporte no Brasil", "Use apps de transporte como Uber ou 99. Para longas distâncias, prefira voos internos.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Praias e Natureza", "O Brasil tem mais de 7.500 km de costa. Visite Fernando de Noronha, Jericoacoara e Lopes Mendes.", R.drawable.icon_cultura)
+                )
+            }
+            5 -> { // Itália
+                listOf(
+                    TravelTip(1, "CULTURA", "Culinária Italiana", "Experimente massas frescas, pizzas napolitanas e gelato artesanal. Cada região tem pratos típicos únicos.", R.drawable.icon_comida),
+                    TravelTip(2, "CULTURA", "Arte e História", "Visite o Vaticano, os museus de Florença e as ruínas de Pompeia. A Itália é um museu a céu aberto.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "Trenitalia e Frecce", "Os trens italianos são eficientes. Reserve com antecedência para obter melhores preços.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Vinhedos Italianos", "Visite a Toscana, Piedmont e Sicília para degustar wines tintos e brancos de classe mundial.", R.drawable.icon_cultura)
+                )
+            }
+            6 -> { // Reino Unido
+                listOf(
+                    TravelTip(1, "CULTURA", "Culinária Britânica", "Experimente o tradicional English breakfast, fish and chips e o famoso afternoon tea.", R.drawable.icon_comida),
+                    TravelTip(2, "CULTURA", "Monarquias e Castelos", "Visite o Palácio de Buckingham, a Torre de Londres e castelos medievais na Escócia.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "London Underground", "O metrô de Londres (Tube) é extenso e eficiente. Compre o Oyster Card para economizar.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Pub Culture", "Os pubs britânicos são parte da cultura. Experimente diferentes tipos de cerveja e cidra.", R.drawable.icon_cultura)
+                )
+            }
+            7 -> { // Estados Unidos
+                listOf(
+                    TravelTip(1, "CULTURA", "Culinária Americana", "Experimente hambúrgueres, BBQ texano, pizza de Nova York e comida mexicana na Califórnia.", R.drawable.icon_comida),
+                    TravelTip(2, "CULTURA", "Parques Nacionais", "Visite Yellowstone, Grand Canyon, Yosemite e Zion para paisagens naturais espetaculares.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "Alugar Carro", "Nos EUA, alugar carro é muitas vezes necessário. As distâncias entre cidades são grandes.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Cidades Icônicas", "Nova York, Los Angeles, Chicago e Miami têm atrações únicas e culturais diversas.", R.drawable.icon_cultura)
+                )
+            }
+            8 -> { // Japão
+                listOf(
+                    TravelTip(1, "CULTURA", "Culinária Japonesa", "Experimente sushi, ramen, tempura e okonomiyaki. A comida japonesa é reconhecida mundialment.", R.drawable.icon_comida),
+                    TravelTip(2, "CULTURA", "Tradições e Templos", "Visite templos em Quioto, o Templo Senso-ji em Tóquio e participe de uma cerimónia do chá.", R.drawable.icon_cultura),
+                    TravelTip(3, "TRANSPORTE", "Japan Rail Pass", "O JR Pass permite viagens ilimitadas nos trens-bala. Reserve com antecedência.", R.drawable.icon_transporte),
+                    TravelTip(4, "CULTURA", "Tecnologia e Inovação", "Explore Akihabara em Tóquio para eletrónica e anime. O Japão combina tradição com modernidade.", R.drawable.icon_cultura)
+                )
+            }
             else -> emptyList()
         }
     }
