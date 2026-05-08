@@ -33,7 +33,7 @@ class CountryAdapter(
 
         holder.itemView.setOnClickListener {
             val intent = Intent(context, CountryTipsActivity::class.java).apply {
-                putExtra("country", country)
+                putExtra("country", country as java.io.Serializable)
             }
             context.startActivity(intent)
         }

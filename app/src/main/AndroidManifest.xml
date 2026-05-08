@@ -13,8 +13,7 @@
         android:theme="@style/Theme.TravelGuide">
         <activity
             android:name=".LoginActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
