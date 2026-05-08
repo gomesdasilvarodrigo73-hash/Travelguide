@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -14,10 +15,17 @@ class CountryTipsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_country_tips)
 
+        val toolbar: Toolbar = findViewById(R.id.toolbarTips)
         val flagImageView: ImageView = findViewById(R.id.countryFlagLarge)
         val nameTextView: TextView = findViewById(R.id.countryNameLarge)
         val detailsTextView: TextView = findViewById(R.id.countryDetails)
         val tipsRecyclerView: RecyclerView = findViewById(R.id.tipsRecyclerView)
+
+        // Configurar toolbar
+        setSupportActionBar(toolbar)
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
 
         val country = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             intent.getSerializableExtra("country", Country::class.java)
@@ -32,7 +40,6 @@ class CountryTipsActivity : AppCompatActivity() {
             detailsTextView.text = "${it.capital} • ${it.currency} • ${it.language}"
             
             supportActionBar?.title = it.name
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
             val travelTips = getTravelTipsForCountry(it.id)
             val adapter = TravelTipAdapter(travelTips)
