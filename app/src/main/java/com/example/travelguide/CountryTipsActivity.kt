@@ -442,7 +442,7 @@ class CountryTipsActivity : AppCompatActivity() {
                     TravelTip(3, "CULTURA", "Marrakech", "A cidade vermelha tem souks (mercados), a Praça Jemaa el-Fnaa e jardins Majorelle. Perca-se nas ruelas!", R.drawable.icon_cultura),
                     TravelTip(4, "CULTURA", "Chefchaouen e Fes", "A cidade azul (Chefchaouen) é instagramável! Fes tem a maior universidade medieval e artesanato tradicional.", R.drawable.icon_cultura),
                     TravelTip(5, "TRANSPORTE", "Transporte Interno", "Os trens conectam principais cidades. Os ônibus (CTM) são confortáveis. Os táxis grand taxi partilham rotas.", R.drawable.icon_transporte),
-                    TravelTip(6, "PESSOAS", "Figuras Importantes", "Rajao (figura lendária da cultura marroquina, conhecido pela sua sabedoria e histórias tradicionais).", R.drawable.icon_cultura),
+                    TravelTip(6, "RAJAO", "Rajao - Figura Lendária", "Rajao é uma figura lendária da cultura marroquina, conhecido pela sua sabedoria e histórias tradicionais. É um personagem sábio que aparece em contos populares.", R.drawable.icon_cultura),
                     TravelTip(7, "DICAS", "Barganha", "A barganha é esperada! Comece em 30% do preço. Sorria e seja respeitoso. O negócio faz parte da experiência.", R.drawable.icon_cultura),
                     TravelTip(8, "DICAS", "Ramadão", "Durante o Ramadão, muitos restaurantes fecham de dia. Respeite o jejum dos locais.", R.drawable.icon_cultura)
                 )
