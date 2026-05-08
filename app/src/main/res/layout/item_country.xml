@@ -60,12 +60,17 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerMais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:src="@android:drawable/ic_menu_more"
-            android:tint="@color/text_hint" />
+            android:text="Ver"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/primary_blue"
+            app:cornerRadius="20dp"
+            android:paddingHorizontal="16dp" />
 
     </LinearLayout>
 

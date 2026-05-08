@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.button.MaterialButton
 
 class CountryAdapter(
     private val context: Context,
@@ -18,6 +19,7 @@ class CountryAdapter(
         val flagImageView: ImageView = itemView.findViewById(R.id.countryFlag)
         val nameTextView: TextView = itemView.findViewById(R.id.countryName)
         val infoTextView: TextView = itemView.findViewById(R.id.countryInfo)
+        val btnVerMais: MaterialButton = itemView.findViewById(R.id.btnVerMais)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountryViewHolder {
@@ -31,10 +33,15 @@ class CountryAdapter(
         holder.nameTextView.text = country.name
         holder.infoTextView.text = "${country.capital} • ${country.currency} • ${country.continent}"
 
+        val intent = Intent(context, CountryTipsActivity::class.java).apply {
+            putExtra("country", country as java.io.Serializable)
+        }
+
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, CountryTipsActivity::class.java).apply {
-                putExtra("country", country as java.io.Serializable)
-            }
+            context.startActivity(intent)
+        }
+
+        holder.btnVerMais.setOnClickListener {
             context.startActivity(intent)
         }
     }
