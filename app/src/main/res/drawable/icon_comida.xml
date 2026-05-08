@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Prato (Aproximação de elipse usando path) -->
+    <path
+        android:fillColor="#F5F5DC"
+        android:pathData="M100,100 C133.1,100 160,109 160,120 C160,131 133.1,140 100,140 C66.9,140 40,131 40,120 C40,109 66.9,100 100,100 Z" />
+    
+    <!-- Comida (Aproximação de elipse usando path) -->
+    <path
+        android:fillColor="#FF6347"
+        android:pathData="M100,95 C122.1,95 140,101.7 140,110 C140,118.3 122.1,125 100,125 C77.9,125 60,118.3 60,110 C60,101.7 77.9,95 100,95 Z" />
+    
+    <!-- Garfo -->
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M40,80 L44,80 L44,130 L40,130 Z" />
+    
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M38,80 L42,80 L42,75 L40,70 L38,75 Z" />
+    
+    <!-- Faca -->
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M150,80 L154,80 L154,130 L150,130 Z" />
+    
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M148,80 L156,80 L154,70 L150,70 Z" />
+
+</vector>

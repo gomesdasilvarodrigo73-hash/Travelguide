@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Base do monumento -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M60,140 L140,140 L140,180 L60,180 Z" />
+    
+    <!-- Colunas -->
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M70,80 L85,80 L85,140 L70,140 Z" />
+    
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M115,80 L130,80 L130,140 L115,140 Z" />
+    
+    <!-- Frontão -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M60,80 L100,40 L140,80 Z" />
+    
+    <!-- Detalhe (Círculo aproximado) -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M100,92 C104.4,92 108,95.6 108,100 C108,104.4 104.4,108 100,108 C95.6,108 92,104.4 92,100 C92,95.6 95.6,92 100,92 Z" />
+
+</vector>

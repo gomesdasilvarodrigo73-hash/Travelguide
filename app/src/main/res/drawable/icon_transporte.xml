@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Corpo do autocarro (Rect com rounded corners aproximado) -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M48,80 L152,80 C156.4,80 160,83.6 160,88 L160,132 C160,136.4 156.4,140 152,140 L48,140 C43.6,140 40,136.4 40,132 L40,88 C40,83.6 43.6,80 48,80 Z" />
+    
+    <!-- Janelas -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M50,90 L70,90 L70,110 L50,110 Z" />
+    
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M80,90 L100,90 L100,110 L80,110 Z" />
+    
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M110,90 L130,90 L130,110 L110,110 Z" />
+    
+    <!-- Porta -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M140,100 L155,100 L155,140 L140,140 Z" />
+    
+    <!-- Rodas -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M70,138 C76.6,138 82,143.4 82,150 C82,156.6 76.6,162 70,162 C63.4,162 58,156.6 58,150 C58,143.4 63.4,138 70,138 Z" />
+    
+    <path
+        android:fillColor="#000000"
+        android:pathData="M130,138 C136.6,138 142,143.4 142,150 C142,156.6 136.6,162 130,162 C123.4,162 118,156.6 118,150 C118,143.4 123.4,138 130,138 Z" />
+    
+    <!-- Faróis -->
+    <path
+        android:fillColor="#FFFF00"
+        android:pathData="M35,95 C37.8,95 40,97.2 40,100 C40,102.8 37.8,105 35,105 C32.2,105 30,102.8 30,100 C30,97.2 32.2,95 35,95 Z" />
+    
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M165,95 C167.8,95 170,97.2 170,100 C170,102.8 167.8,105 165,105 C162.2,105 160,102.8 160,100 C160,97.2 162.2,95 165,95 Z" />
+
+</vector>
