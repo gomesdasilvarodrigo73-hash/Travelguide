@@ -127,7 +127,13 @@ class RegisterActivity : AppCompatActivity() {
         editor.putString("password_$username", password)
         editor.putString("email_$username", email)
         editor.putString("fullName_$username", fullName)
-        editor.apply()
+        
+        // Verificar se foi guardado
+        if (editor.commit()) {
+            showToast("Utilizador guardado: $username")
+        } else {
+            showToast("Erro ao guardar utilizador")
+        }
     }
 
     private fun showToast(message: String) {
