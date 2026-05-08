@@ -13,6 +13,9 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        
+        // Criar utilizador admin automaticamente
+        createAdminUser()
 
         val usernameEditText: TextInputEditText = findViewById(R.id.usernameEditText)
         val passwordEditText: TextInputEditText = findViewById(R.id.passwordEditText)
@@ -133,6 +136,20 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+    
+    private fun createAdminUser() {
+        val sharedPrefs = getSharedPreferences("UserCredentials", MODE_PRIVATE)
+        
+        // Verificar se admin já existe
+        if (sharedPrefs.getString("password_admin", null) == null) {
+            val editor = sharedPrefs.edit()
+            editor.putString("username_admin", "admin")
+            editor.putString("password_admin", "1234")
+            editor.putString("email_admin", "admin@travelguide.com")
+            editor.putString("fullName_admin", "Administrador")
+            editor.apply()
+        }
     }
 
     override fun onStart() {
