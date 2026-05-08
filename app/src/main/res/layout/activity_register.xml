@@ -186,7 +186,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp"
             android:text="Já tem uma conta? Faça login"
             android:textColor="@color/primary_blue"
             android:textSize="14sp"
@@ -195,7 +194,25 @@
             android:background="?android:attr/selectableItemBackground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/createAccountButton"
+            app:layout_constraintTop_toBottomOf="@id/createAccountButton" />
+
+        <!-- Voltar Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButtonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="← Voltar"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconTint="@color/text_secondary"
+            app:rippleColor="@color/ripple_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backToLoginTextView"
             app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

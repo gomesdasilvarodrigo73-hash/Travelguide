@@ -20,6 +20,7 @@ class RegisterActivity : AppCompatActivity() {
         val confirmPasswordEditText: TextInputEditText = findViewById(R.id.confirmPasswordEditText)
         val createAccountButton: MaterialButton = findViewById(R.id.createAccountButton)
         val backToLoginTextView: android.widget.TextView = findViewById(R.id.backToLoginTextView)
+        val backButtonRegister: MaterialButton = findViewById(R.id.backButtonRegister)
 
         // Configurar animação do botão
         setupButtonAnimation(createAccountButton)
@@ -45,6 +46,12 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         backToLoginTextView.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        
+        backButtonRegister.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()

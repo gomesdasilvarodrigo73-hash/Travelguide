@@ -22,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
         val loginButton: MaterialButton = findViewById(R.id.loginButton)
         val registerButton: MaterialButton = findViewById(R.id.registerButton)
         val forgotPasswordTextView: android.widget.TextView = findViewById(R.id.forgotPasswordTextView)
+        val backButton: MaterialButton = findViewById(R.id.backButton)
 
         // Configurar listeners dos botões com animações e feedback
         setupButtonAnimations(loginButton, registerButton)
@@ -51,6 +52,11 @@ class LoginActivity : AppCompatActivity() {
         forgotPasswordTextView.setOnClickListener {
             // Mostrar mensagem de recuperação de senha
             showRecoveryDialog()
+        }
+        
+        backButton.setOnClickListener {
+            // Voltar / Sair da app
+            finish()
         }
     }
 
