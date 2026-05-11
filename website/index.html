@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travalguide - Seu Guia de Viagem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(45deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 0;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(45deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #00d9ff, #00ff88);
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            min-width: 300px;
+        }
+
+        .phone-mockup {
+            width: 280px;
+            height: 550px;
+            background: linear-gradient(145deg, #2a2a4a, #1a1a2e);
+            border-radius: 40px;
+            padding: 15px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            border: 3px solid #3a3a5a;
+        }
+
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #16213e, #0f3460);
+            border-radius: 28px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .flag-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .flag {
+            width: 40px;
+            height: 28px;
+            border-radius: 4px;
+            background: #3a3a5a;
+        }
+
+        .features {
+            padding: 80px 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(45deg, #00d9ff, #00ff88);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 30px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #a0a0a0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .countries {
+            padding: 80px 0;
+        }
+
+        .countries h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .countries p {
+            text-align: center;
+            color: #a0a0a0;
+            margin-bottom: 50px;
+        }
+
+        .country-flags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .country-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+
+        .download {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .download h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .download p {
+            color: #a0a0a0;
+            margin-bottom: 30px;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: #000;
+            padding: 12px 24px;
+            border-radius: 12px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .app-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .app-badge span {
+            display: block;
+            font-size: 10px;
+            color: #a0a0a0;
+        }
+
+        .app-badge strong {
+            font-size: 16px;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #a0a0a0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-image {
+                margin-top: 40px;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">✈️ Travalguide</div>
+            <nav>
+                <a href="#features">Funcionalidades</a>
+                <a href="#countries">Países</a>
+                <a href="#download">Download</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Descubra o Mundo com <span>Travalguide</span></h1>
+                <p>Seu guia de viagem completo com dicas de gastronomia, cultura, transporte e muito mais para 33 países ao redor do mundo.</p>
+                <a href="#download" class="btn btn-primary">Baixar Agora</a>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div style="font-size: 48px; margin-bottom: 20px;">✈️</div>
+                        <div style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">Travalguide</div>
+                        <div style="color: #00d9ff; font-size: 14px;">33 Países • 264 Dicas</div>
+                        <div class="flag-grid">
+                            <div class="flag" style="background: #006600;"></div>
+                            <div class="flag" style="background: #AA151B;"></div>
+                            <div class="flag" style="background: #002395;"></div>
+                            <div class="flag" style="background: #CE1126;"></div>
+                            <div class="flag" style="background: #009B3A;"></div>
+                            <div class="flag" style="background: #BF0A30;"></div>
+                            <div class="flag" style="background: #BC002D;"></div>
+                            <div class="flag" style="background: #FF0000;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <h2>Por que escolher o <span style="color: #00d9ff;">Travalguide</span>?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Gastronomia Local</h3>
+                    <p>Descubra os melhores pratos típicos de cada país, desde street food até alta gastronomia.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>Cultura e História</h3>
+                    <p>Explore monumentos, museus e tradições culturais de cada destino.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚌</div>
+                    <h3>Transporte</h3>
+                    <p>Informações práticas sobre como se locomover em cada país.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Dicas Úteis</h3>
+                    <p>Conselhos práticos sobre segurança, idioma, moeda e muito mais.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Pessoas Importantes</h3>
+                    <p>Conheça as figuras históricas e atuais que moldaram cada país.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>33 Países</h3>
+                    <p>Cobertura completa de países na Europa, Américas, Ásia, Oceania e África.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="countries" id="countries">
+            <h2>Países Disponíveis</h2>
+            <p>Explore dicas detalhadas para os principais destinos turísticos do mundo</p>
+            <div class="country-flags">
+                <div class="country-tag">🇵🇹 Portugal</div>
+                <div class="country-tag">🇪🇸 Espanha</div>
+                <div class="country-tag">🇫🇷 França</div>
+                <div class="country-tag">🇮🇹 Itália</div>
+                <div class="country-tag">🇬🇧 Reino Unido</div>
+                <div class="country-tag">🇩🇪 Alemanha</div>
+                <div class="country-tag">🇨🇭 Suíça</div>
+                <div class="country-tag">🇳🇱 Holanda</div>
+                <div class="country-tag">🇧🇪 Bélgica</div>
+                <div class="country-tag">🇦🇹 Áustria</div>
+                <div class="country-tag">🇬🇷 Grécia</div>
+                <div class="country-tag">🇵🇱 Polónia</div>
+                <div class="country-tag">🇧🇷 Brasil</div>
+                <div class="country-tag">🇺🇸 EUA</div>
+                <div class="country-tag">🇨🇦 Canadá</div>
+                <div class="country-tag">🇲🇽 México</div>
+                <div class="country-tag">🇦🇷 Argentina</div>
+                <div class="country-tag">🇨🇱 Chile</div>
+                <div class="country-tag">🇨🇴 Colômbia</div>
+                <div class="country-tag">🇵🇪 Peru</div>
+                <div class="country-tag">🇯🇵 Japão</div>
+                <div class="country-tag">🇨🇳 China</div>
+                <div class="country-tag">🇰🇷 Coreia do Sul</div>
+                <div class="country-tag">🇮🇳 Índia</div>
+                <div class="country-tag">🇹🇭 Tailândia</div>
+                <div class="country-tag">🇸🇬 Singapura</div>
+                <div class="country-tag">🇦🇪 Emirados</div>
+                <div class="country-tag">🇹🇷 Turquía</div>
+                <div class="country-tag">🇦🇺 Austrália</div>
+                <div class="country-tag">🇳🇿 Nova Zelândia</div>
+                <div class="country-tag">🇪🇬 Egito</div>
+                <div class="country-tag">🇲🇦 Marrocos</div>
+                <div class="country-tag">🇿🇦 África do Sul</div>
+            </div>
+        </section>
+
+        <section class="download" id="download">
+            <h2>Baixe o App Agora</h2>
+            <p>Disponível para Android. Comece a explorar o mundo hoje!</p>
+            <a href="https://github.com/gomesdasilvarodrigo73-hash/Travelguide/raw/main/app/build/outputs/apk/debug/app-debug.apk" class="btn btn-primary" download>📥 Download APK</a>
+            <div style="margin-top: 30px;">
+                <div class="app-badge">
+                    <span>Disponível na</span>
+                    <strong>Google Play</strong>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Travalguide. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px; font-size: 14px;">Feito com ❤️ para viajantes</p>
+        </footer>
+    </div>
+</body>
+</html>
