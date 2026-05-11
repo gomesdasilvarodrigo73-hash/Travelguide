@@ -1,3 +1,4 @@
+
 # 🌍 App de Dicas de Viagem por País
 
 ## 🎯 Objetivo do Projeto

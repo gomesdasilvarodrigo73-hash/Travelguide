@@ -351,19 +351,19 @@ class CountryTipsActivity : AppCompatActivity() {
                     TravelTip(8, "DICAS", "Vestuário em Templos", "Vista-se modestamente - ombros e joelhos cobertos. Isso é especialmente importante em mesquitas.", R.drawable.icon_cultura)
                 )
             }
-            26 -> { // Marrocos
+            32 -> { // Marrocos
                 listOf(
                     TravelTip(1, "GASTRONOMIA", "Culinária Marroquina", "O tagine (guisado lento) é prato nacional! O cuscuz, o pastilla (doce/salgado) e o harira (sopa) são imperdíveis.", R.drawable.icon_comida),
-                    TravelTip(2, "GASTRONOMIA", "Chá e Doces", "O chá de menta com açúcar é仪式上! Os doces com amêndoas e mel são viciantes. O café é forte.", R.drawable.icon_comida),
+                    TravelTip(2, "GASTRONOMIA", "Chá e Doces", "O chá de menta com açúcar é tradição! Os doces com amêndoas e mel são viciantes. O café é forte.", R.drawable.icon_comida),
                     TravelTip(3, "CULTURA", "Marrakech", "A cidade vermelha tem souks (mercados), a Praça Jemaa el-Fnaa e jardins Majorelle. Perca-se nas ruelas!", R.drawable.icon_cultura),
                     TravelTip(4, "CULTURA", "Chefchaouen e Fes", "A cidade azul (Chefchaouen) é instagramável! Fes tem a maior universidade medieval e artesanato tradicional.", R.drawable.icon_cultura),
                     TravelTip(5, "TRANSPORTE", "Transporte Interno", "Os trens conectam principais cidades. Os ônibus (CTM) são confortáveis. Os táxis grand taxi partilham rotas.", R.drawable.icon_transporte),
-                    TravelTip(6, "DICAS", "Barganha", "A barganha é esperada! Comece em 30% do preço. Sorria e seja respeitoso. O negócio faz parte da experiência.", R.drawable.icon_cultura),
-                    TravelTip(7, "DICAS", "Deserto de Sahara", "Uma viagem ao deserto é obrigatória! As dunes de Merzouga e Zagora são as mais acessíveis. Passe uma noite sob as estrelas!", R.drawable.icon_cultura),
+                    TravelTip(6, "RAJAO", "Rajao - Figura Lendária", "Rajao é uma figura lendária da cultura marroquina, conhecido pela sua sabedoria e histórias tradicionais. É um personagem sábio que aparece em contos populares.", R.drawable.icon_cultura),
+                    TravelTip(7, "DICAS", "Barganha", "A barganha é esperada! Comece em 30% do preço. Sorria e seja respeitoso. O negócio faz parte da experiência.", R.drawable.icon_cultura),
                     TravelTip(8, "DICAS", "Ramadão", "Durante o Ramadão, muitos restaurantes fecham de dia. Respeite o jejum dos locais.", R.drawable.icon_cultura)
                 )
             }
-            27 -> { // África do Sul
+            33 -> { // África do Sul
                 listOf(
                     TravelTip(1, "GASTRONOMIA", "Braai e Biltong", "O braai (churrasco sul-africano) é tradição! O biltong (carne seca) é lanche típico. O bobotie (carne temperada) é imperdível.", R.drawable.icon_comida),
                     TravelTip(2, "GASTRONOMIA", "Vinhos Sul-Africanos", "A região de Stellenbosch e Franschhoek produz wines de classe mundial! Os tours por vinhas são experiências.", R.drawable.icon_comida),
@@ -433,18 +433,6 @@ class CountryTipsActivity : AppCompatActivity() {
                     TravelTip(6, "PESSOAS", "Figuras Importantes", "Pelé (futebol), Ayrton Senna (F1), Carmen Miranda (cantora), Machado de Assis (escritor), Oscar Niemeyer (arquiteto), Neymar (futebol).", R.drawable.icon_cultura),
                     TravelTip(7, "DICAS", "Segurança", "Evite áreas de risco à noite. Não use joias ou objetos de valor nas praias. Mantenha documentos seguros. Em caso de emergência, disque 190.", R.drawable.icon_cultura),
                     TravelTip(8, "DICAS", "Idioma e Comunicação", "O português brasileiro é diferente do europeu. O inglês é falado em hotéis e restaurantes turísticos. Aprenda algumas frases básicas!", R.drawable.icon_cultura)
-                )
-            }
-            33 -> { // Marrocos - só com Rajao
-                listOf(
-                    TravelTip(1, "GASTRONOMIA", "Culinária Marroquina", "O tagine (guisado lento) é prato nacional! O cuscuz, o pastilla (doce/salgado) e o harira (sopa) são imperdíveis.", R.drawable.icon_comida),
-                    TravelTip(2, "GASTRONOMIA", "Chá e Doces", "O chá de menta com açúcar é tradição! Os doces com amêndoas e mel são viciantes. O café é forte.", R.drawable.icon_comida),
-                    TravelTip(3, "CULTURA", "Marrakech", "A cidade vermelha tem souks (mercados), a Praça Jemaa el-Fnaa e jardins Majorelle. Perca-se nas ruelas!", R.drawable.icon_cultura),
-                    TravelTip(4, "CULTURA", "Chefchaouen e Fes", "A cidade azul (Chefchaouen) é instagramável! Fes tem a maior universidade medieval e artesanato tradicional.", R.drawable.icon_cultura),
-                    TravelTip(5, "TRANSPORTE", "Transporte Interno", "Os trens conectam principais cidades. Os ônibus (CTM) são confortáveis. Os táxis grand taxi partilham rotas.", R.drawable.icon_transporte),
-                    TravelTip(6, "RAJAO", "Rajao - Figura Lendária", "Rajao é uma figura lendária da cultura marroquina, conhecido pela sua sabedoria e histórias tradicionais. É um personagem sábio que aparece em contos populares.", R.drawable.icon_cultura),
-                    TravelTip(7, "DICAS", "Barganha", "A barganha é esperada! Comece em 30% do preço. Sorria e seja respeitoso. O negócio faz parte da experiência.", R.drawable.icon_cultura),
-                    TravelTip(8, "DICAS", "Ramadão", "Durante o Ramadão, muitos restaurantes fecham de dia. Respeite o jejum dos locais.", R.drawable.icon_cultura)
                 )
             }
             else -> emptyList()
