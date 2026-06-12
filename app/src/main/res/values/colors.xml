@@ -2,38 +2,64 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    
-    <!-- Cores do tema - Gradiente Azul/Roxo moderno -->
-    <color name="primary_blue">#6366F1</color>
-    <color name="primary_dark">#4F46E5</color>
-    <color name="primary_light">#818CF8</color>
-    <color name="accent_color">#F59E0B</color>
-    <color name="secondary">#EC4899</color>
-    
-    <!-- Cores de fundo -->
-    <color name="background_light">#F8FAFC</color>
-    <color name="background_gradient_start">#EEF2FF</color>
-    <color name="background_gradient_end">#E0E7FF</color>
-    <color name="card_background">#FFFFFF</color>
-    
-    <!-- Cores de texto -->
-    <color name="text_primary">#1E293B</color>
-    <color name="text_secondary">#64748B</color>
-    <color name="text_hint">#94A3B8</color>
+
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5A52E0</color>
+    <color name="primary_light">#8B83FF</color>
+    <color name="primary_10">#1A6C63FF</color>
+    <color name="primary_20">#336C63FF</color>
+
+    <color name="secondary">#FF6B6B</color>
+    <color name="secondary_dark">#E55555</color>
+
+    <color name="accent_green">#00C897</color>
+    <color name="accent_green_20">#3300C897</color>
+    <color name="accent_orange">#FFB347</color>
+    <color name="accent_orange_20">#33FFB347</color>
+    <color name="accent_blue">#4ECDC4</color>
+    <color name="accent_blue_20">#334ECDC4</color>
+
+    <color name="background">#F4F6FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F8F9FE</color>
+
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
     <color name="text_on_primary">#FFFFFF</color>
-    
-    <!-- Cores de destaque -->
-    <color name="ripple_color">#C7D2FE</color>
-    <color name="divider_color">#E2E8F0</color>
-    
-    <!-- Cores de categorias -->
-    <color name="category_cultura">#6366F1</color>
-    <color name="category_comida">#F59E0B</color>
-    <color name="category_transporte">#10B981</color>
-    <color name="category_seguranca">#EF4444</color>
-    
-    <!-- Cores de sucesso/erro -->
+
+    <color name="divider">#E5E7EB</color>
+    <color name="divider_light">#F3F4F6</color>
+
+    <color name="gradient_start">#6C63FF</color>
+    <color name="gradient_middle">#7B6FFF</color>
+    <color name="gradient_end">#4ECDC4</color>
+
+    <color name="card_tag_cultura">#6C63FF</color>
+    <color name="card_tag_cultura_bg">#EDE9FF</color>
+    <color name="card_tag_comida">#FF6B6B</color>
+    <color name="card_tag_comida_bg">#FFE8E8</color>
+    <color name="card_tag_transporte">#00C897</color>
+    <color name="card_tag_transporte_bg">#E0FBF3</color>
+    <color name="card_tag_seguranca">#FFB347</color>
+    <color name="card_tag_seguranca_bg">#FFF3E0</color>
+    <color name="card_tag_dicas">#4ECDC4</color>
+    <color name="card_tag_dicas_bg">#E0FBF8</color>
+    <color name="card_tag_pessoas">#FF6B6B</color>
+    <color name="card_tag_pessoas_bg">#FFE8E8</color>
+
     <color name="success">#22C55E</color>
     <color name="error">#EF4444</color>
     <color name="warning">#F59E0B</color>
+
+    <color name="chip_background">#F0EDFF</color>
+    <color name="ripple">#E0DBFF</color>
+    
+    <color name="primary_blue">#00d9ff</color>
+    <color name="accent_color">#00ff88</color>
+    <color name="background_light">#ffffff</color>
+    <color name="card_background">#2a2a4a</color>
+    <color name="ripple_color">#E0DBFF</color>
+    <color name="background_gradient_start">#1a1a2e</color>
+    <color name="background_gradient_end">#16213e</color>
 </resources>

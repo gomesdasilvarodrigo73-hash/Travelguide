@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="80dp"
+    android:viewportWidth="300"
+    android:viewportHeight="200">
+    <rect android:fillColor="#000000" android:width="300dp" android:height="60dp" android:strokeWidth="20" android:strokeColor="#FFFFFF"/>
+    <rect android:fillColor="#000000" android:width="300dp" android:height="40dp" android:y="80dp"/>
+    <rect android:fillColor="#006600" android:width="300dp" android:height="40dp" android:strokeWidth="20" android:strokeColor="#FFFFFF"/>
+    <rect android:fillColor="#006600" android:width="300dp" android:height="40dp" android:y="120dp"/>
+    <rect android:fillColor="#CC0000" android:width="300dp" android:height="40dp" android:strokeWidth="20" android:strokeColor="#FFFFFF"/>
+    <rect android:fillColor="#CC0000" android:width="300dp" android:height="40dp" android:y="160dp"/>
+</vector>

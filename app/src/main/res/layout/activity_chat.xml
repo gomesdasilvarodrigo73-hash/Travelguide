@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarChat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:navigationIconTint="@color/white"
+        app:title="TravelGuide Assistente"
+        app:titleTextColor="@color/white" />
+
+    <!-- Chat messages area -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Quick suggestions -->
+    <HorizontalScrollView
+        android:id="@+id/suggestionsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:paddingHorizontal="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/suggestionsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp" />
+
+    </HorizontalScrollView>
+
+    <!-- Input area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/surface"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:hint="Escreva a sua pergunta..."
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:background="@null"
+            android:imeOptions="actionSend"
+            android:maxLines="4"
+            android:padding="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:contentDescription="Enviar"
+            android:tint="@color/white"
+            app:tint="@color/white"
+            app:fabSize="mini"
+            app:backgroundTint="@color/primary" />
+
+    </LinearLayout>
+
+</LinearLayout>

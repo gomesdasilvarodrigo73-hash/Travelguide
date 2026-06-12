@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="80dp"
+    android:viewportWidth="300"
+    android:viewportHeight="200">
+    <rect android:fillColor="#FFD700" android:width="300dp" android:height="100dp"/>
+    <rect android:fillColor="#0033A0" android:width="300dp" android:height="50dp" android:y="100dp"/>
+    <rect android:fillColor="#E3000F" android:width="300dp" android:height="50dp" android:y="150dp"/>
+</vector>
