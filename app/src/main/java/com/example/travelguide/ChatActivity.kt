@@ -36,15 +36,14 @@ class ChatActivity : AppCompatActivity() {
         setupSuggestions()
 
         // Send welcome message
-        messages.add(
-            ChatMessage(
-                id = ++messageIdCounter,
-                text = ChatBot.getWelcomeMessage(),
-                isFromUser = false,
-                timestamp = System.currentTimeMillis()
-            )
+        val welcomeMessage = ChatMessage(
+            id = ++messageIdCounter,
+            text = ChatBot.getWelcomeMessage(),
+            isFromUser = false,
+            timestamp = System.currentTimeMillis()
         )
-        chatAdapter.updateMessages(messages.toList())
+        messages.add(welcomeMessage)
+        chatAdapter.notifyDataSetChanged()
         scrollToBottom()
     }
 
@@ -120,7 +119,7 @@ class ChatActivity : AppCompatActivity() {
                 timestamp = System.currentTimeMillis()
             )
         )
-        chatAdapter.updateMessages(messages.toList())
+        chatAdapter.notifyDataSetChanged()
         chatInput.text.clear()
         scrollToBottom()
 
@@ -135,7 +134,7 @@ class ChatActivity : AppCompatActivity() {
                     timestamp = System.currentTimeMillis()
                 )
             )
-            chatAdapter.updateMessages(messages.toList())
+            chatAdapter.notifyDataSetChanged()
             scrollToBottom()
         }, 500)
     }
