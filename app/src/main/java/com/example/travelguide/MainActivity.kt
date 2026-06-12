@@ -47,22 +47,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, ChatActivity::class.java))
                 true
             }
-            R.id.action_logout -> {
-                logout()
-                true
-            }
             else -> super.onOptionsItemSelected(item)
         }
-    }
-
-    private fun logout() {
-        val sharedPreferences = getSharedPreferences("UserSession", Context.MODE_PRIVATE)
-        sharedPreferences.edit().clear().apply()
-        
-        val intent = Intent(this, LoginActivity::class.java)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        startActivity(intent)
-        finish()
     }
 
     private fun getCountries(): List<Country> {
